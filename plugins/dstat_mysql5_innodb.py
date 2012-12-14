@@ -2,6 +2,8 @@
 
 global mysql_options
 mysql_options = os.getenv('DSTAT_MYSQL')
+if mysql_options is None:
+    mysql_options = ''
 
 global target_status
 global _basic_status
